@@ -24,8 +24,8 @@ defmodule EmbeddingService.MixProject do
       {:bandit, "~> 1.6"},
       {:jason, "~> 1.4"},
       {:bumblebee, "~> 0.6"},
-      {:nx, "~> 0.9"},
-      {:exla, "~> 0.9"}
+      {:nx, "~> 0.10"},
+      {:exla, "~> 0.10"}
     ]
   end
 end

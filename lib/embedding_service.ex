@@ -27,7 +27,7 @@ defmodule EmbeddingService do
     children =
       serving_children ++
         [
-          {Bandit, plug: EmbeddingService.Router, port: port}
+          {Bandit, plug: EmbeddingService.Router, port: port, ip: {0, 0, 0, 0}}
         ]
 
     opts = [strategy: :one_for_one, name: EmbeddingService.Supervisor]

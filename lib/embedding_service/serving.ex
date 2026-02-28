@@ -18,7 +18,7 @@ defmodule EmbeddingService.Serving do
         backend: EXLA.Backend
       )
 
-    {:ok, tokenizer} = Bumblebee.load_tokenizer({:hf, model_name})
+    {:ok, tokenizer} = Bumblebee.load_tokenizer({:hf, model_name}, type: :bert)
 
     Bumblebee.Text.text_embedding(model_info, tokenizer,
       output_pool: :mean_pooling,
