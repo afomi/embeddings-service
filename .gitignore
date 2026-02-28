@@ -36,6 +36,3 @@ npm-debug.log
 
 .DS_Store
 /assets/node_modules
-
-# Ignore fly.io config
-fly.toml
